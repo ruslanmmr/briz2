@@ -1,0 +1,17 @@
+doctype html
+html(lang="ru")
+  head
+    include blocks/head
+    link(rel="stylesheet" href="styles/common.min.css")
+  body
+    .wrapper
+      include blocks/header
+      main.main
+        include blocks/home
+        include blocks/advantages
+      include blocks/footer
+    script(src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js")
+    script(src="https://cdnjs.cloudflare.com/ajax/libs/parallax/3.1.0/parallax.min.js")
+    script(src="js/libs.min.js")                 
+    script(src="js/common.min.js")
+    script(src="js/main.min.js")

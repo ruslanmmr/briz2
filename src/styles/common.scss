@@ -1,0 +1,58 @@
+@import '../styles/partials/fonts';
+
+body {
+  text-rendering: optimizeSpeed;
+  font: 16px "Tahoma", sans-serif;
+  min-width: 320px;
+  background-color: #fff;
+  position: relative;
+  color: #373a3c;
+}
+.wrapper {
+  overflow: hidden;
+}
+.container {
+  max-width: 1200px;
+  padding: 0 15px;
+  margin: 0 auto;
+  position: relative;
+  z-index: 2;
+  &_style2 {
+    max-width: 1520px;
+  }
+}
+.button {
+  display: inline-block;
+  padding: 13px 20px;
+  line-height: 24px;
+  font-size: 18px;
+  text-align: center;
+  text-decoration: none;
+  outline: none;
+  transition: 0.3s;
+  &_style1 {
+    background-color: #0d2481;
+    border-radius: 34px;
+    color: #fff;
+    letter-spacing: 5px;
+    &:hover {
+      background-color: #081a5f;
+    }
+  }
+}
+@media all and(max-width: 992px) {
+}
+@media all and(max-width: 576px) {
+  
+}
+
+@import "./partials/header";
+@import "./partials/home";
+@import "./partials/advantages";
+@import "./partials/footer";
+
+.animated {
+  transition: opacity 0.3s, transform 0.3s;
+  opacity: 1 !important;
+  transform: translate(0);
+}
