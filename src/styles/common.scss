@@ -2,7 +2,7 @@
 
 body {
   text-rendering: optimizeSpeed;
-  font: 16px "Tahoma", sans-serif;
+  font: 20px "Tahoma", sans-serif;
   min-width: 320px;
   background-color: #fff;
   position: relative;
@@ -10,6 +10,7 @@ body {
 }
 .wrapper {
   overflow: hidden;
+  padding: 130px 0 0 0;
 }
 .container {
   max-width: 1200px;
@@ -40,15 +41,47 @@ body {
     }
   }
 }
+.block {
+  opacity: 0;
+}
+.padding {
+  padding: 40px 0;
+}
+.title {
+  font-size: 34px;
+  margin: 0;
+  padding: 0 0 1em 0;
+  font-weight: 700;
+}
+.text {
+  line-height: 2em;
+  margin: 0;
+}
 @media all and(max-width: 992px) {
+  .wrapper {
+    padding-top: 94px;
+  }
+}
+@media all and(max-width: 768px) {
+  body {
+    font-size: 18px;
+  }
+  .title {
+    font-size: 26px;
+    padding-bottom: 0.6em;
+  }
 }
 @media all and(max-width: 576px) {
-  
+  .padding {
+    padding: 30px 0;
+  }
 }
 
 @import "./partials/header";
 @import "./partials/home";
 @import "./partials/advantages";
+@import "./partials/breadcrumbs";
+@import "./partials/safety";
 @import "./partials/footer";
 
 .animated {

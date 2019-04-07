@@ -8,7 +8,7 @@ function mainAnim() {
   var timerDelay = 300,
       animated = 'animated',
       navLink = $('.nav__item'),
-      elseEl = $('.advantages, .footer');
+      elseEl = $('.block');
   
   function navFade() {
     navLink.each(function(i){
@@ -20,6 +20,7 @@ function mainAnim() {
   }
   function finalEvent() {
     elseEl.addClass(animated);
+    new WOW({ callback: afterReveal }).init();
   };
   
   $('.home__scene, .mobile-button').addClass(animated);

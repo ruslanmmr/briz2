@@ -1,12 +1,18 @@
 $(document).ready(function () {
   nav();
-  new WOW().init();
   lazy();
 });
 $(window).resize(function () {
   innerWidth = $('body').innerWidth();
 });
 var innerWidth = $('body').innerWidth();
+
+//колбэк срабатывания wow
+function afterReveal( el ) {
+  el.addEventListener('animationend', function( event ) {
+    lazy();
+  });
+}
 
 function nav() {
   var navButton = $('.mobile-button, .overlay'),
