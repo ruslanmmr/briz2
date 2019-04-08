@@ -1,0 +1,79 @@
+mixin dropdown()
+  .faq-tab__dropdown
+    .faq-tab__content
+      .sub-tab
+        .sub-tab__head
+          h6.sub-tab__title How do I download the app?
+        .sub-tab__dropdown
+          .sub-tab__content
+            p.text.sub-tab__text To find a Lime near you, simply open the Lime app. You’ll automatically be taken to the map screen, showing all available Lime vehicles in your area. If you don’t see any vehicle icons displayed on the map, zoom out to search a wider area.
+      .sub-tab
+        .sub-tab__head
+          h6.sub-tab__title How do I find a Lime near me?
+        .sub-tab__dropdown
+          .sub-tab__content
+            p.text.sub-tab__text To find a Lime near you, simply open the Lime app. You’ll automatically be taken to the map screen, showing all available Lime vehicles in your area. If you don’t see any vehicle icons displayed on the map, zoom out to search a wider area.
+      .sub-tab
+        .sub-tab__head
+          h6.sub-tab__title How do I unlock a Lime?
+        .sub-tab__dropdown
+          .sub-tab__content
+            p.text.sub-tab__text To find a Lime near you, simply open the Lime app. You’ll automatically be taken to the map screen, showing all available Lime vehicles in your area. If you don’t see any vehicle icons displayed on the map, zoom out to search a wider area.
+      .sub-tab
+        .sub-tab__head
+          h6.sub-tab__title Where can I ride a Lime?
+        .sub-tab__dropdown
+          .sub-tab__content
+            p.text.sub-tab__text To find a Lime near you, simply open the Lime app. You’ll automatically be taken to the map screen, showing all available Lime vehicles in your area. If you don’t see any vehicle icons displayed on the map, zoom out to search a wider area.
+      .sub-tab
+        .sub-tab__head
+          h6.sub-tab__title Where can I park a Lime?
+        .sub-tab__dropdown
+          .sub-tab__content
+            p.text.sub-tab__text To find a Lime near you, simply open the Lime app. You’ll automatically be taken to the map screen, showing all available Lime vehicles in your area. If you don’t see any vehicle icons displayed on the map, zoom out to search a wider area.
+      .sub-tab
+        .sub-tab__head
+          h6.sub-tab__title How do I end my ride?
+        .sub-tab__dropdown
+          .sub-tab__content
+            p.text.sub-tab__text To find a Lime near you, simply open the Lime app. You’ll automatically be taken to the map screen, showing all available Lime vehicles in your area. If you don’t see any vehicle icons displayed on the map, zoom out to search a wider area.
+.faq.block
+  .container  
+    .faq__container
+      .faq__head.padding.wow.fadeInUp
+        h4.title.faq__title So you have questions about scooters?
+        p.text.faq__text You've got questions. Brize has answers. From "How do I pay for a Brize" to "How do I locate a Brize near me", find out all you need to know about our smart mobility service here.
+      .faq__tabs.padding
+        .faq-tab.wow.fadeInUp
+          .faq-tab__head.faq-tab__head_toggle
+            h5.faq-tab__title How It Works
+            span.faq-tab__ind
+          +dropdown()
+        .faq-tab.wow.fadeInUp
+          .faq-tab__head.faq-tab__head_toggle
+            h5.faq-tab__title Payment
+            span.faq-tab__ind
+          +dropdown()
+        .faq-tab.wow.fadeInUp
+          .faq-tab__head.faq-tab__head_toggle
+            h5.faq-tab__title Safety & Privacy
+            span.faq-tab__ind
+          +dropdown()
+        .faq-tab.wow.fadeInUp
+          .faq-tab__head.faq-tab__head_toggle
+            h5.faq-tab__title Community
+            span.faq-tab__ind
+          +dropdown()
+        .faq-tab.faq-tab_info.wow.fadeInUp
+          .faq-tab__head
+            h5.faq-tab__title Need More Help?
+            .faq-tab__contacts
+              ul.faq-tab__contacts-list
+                li.faq-tab__contacts-item
+                  a(href="#").button.button_style1.faq-tab__button Contact support
+                li.faq-tab__contacts-item
+                  a(href="#").button.button_style1.faq-tab__button Visit help center
+                li.faq-tab__contacts-item
+                  span.faq-tab__contacts-label Call:
+                  a(href="tel:74950000495").faq-tab__contacts-number +7 495 000 04 95
+

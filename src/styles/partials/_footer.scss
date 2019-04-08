@@ -58,6 +58,7 @@
     font-size: 18px;
     color: #373a3c;
     transition: 0.3s;
+    white-space: nowrap;
     &:hover {
       color: #4b4b4b;
     }
@@ -153,7 +154,7 @@
     text-align: center;
   }
   .footer__list {
-    flex: 1 1 33.33%;
+    flex: 1 1 50%;
   }
   .footer__nav-item {
     padding: 10px !important;
