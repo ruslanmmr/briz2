@@ -1,0 +1,17 @@
+doctype html
+html(lang="ru")
+  head
+    include blocks/head
+    link(rel="stylesheet" href="styles/common.min.css")
+  body
+    .wrapper
+      include blocks/header
+      include blocks/breadcrumbs
+      +breadcrumbs('Support')
+      main.main.padding
+        include blocks/support-block
+      include blocks/footer
+    script(src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js")
+    script(src="js/libs.min.js")                 
+    script(src="js/common.min.js")
+    script(src="js/secondary.min.js")

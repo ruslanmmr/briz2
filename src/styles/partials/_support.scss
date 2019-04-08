@@ -1,0 +1,18 @@
+.support {
+  &__form {
+    padding-top: 30px;
+  }
+  &__title {
+    text-align: center;
+  }
+  &__form {
+    max-width: 960px;
+    margin: 0 auto;
+  }
+}
+
+@media all and(max-width: 576px) {
+  .padding {
+    padding: 30px 0;
+  }
+}
