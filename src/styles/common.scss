@@ -2,11 +2,18 @@
 
 body {
   text-rendering: optimizeSpeed;
-  font: 20px "Tahoma", sans-serif;
+  font: 18px "Tahoma", sans-serif;
   min-width: 320px;
+  line-height: 2;
   background-color: #fff;
   position: relative;
-  color: #373a3c;
+  color: #000;
+}
+p {
+  margin: 0;
+  &:not(:last-child) {
+    margin-bottom: 1em;
+  }
 }
 .wrapper {
   overflow: hidden;
@@ -21,6 +28,24 @@ body {
   &_style2 {
     max-width: 1520px;
   }
+}
+.cover-box {
+  overflow: hidden;
+  display: block;
+  position: relative;
+  img {
+    display: block;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+  }
+}
+.wh {
+  height:100%!important
+}
+.ww {
+  width:100%!important
 }
 .button {
   display: inline-block;
@@ -49,14 +74,21 @@ body {
   padding: 40px 0;
 }
 .title {
-  font-size: 34px;
-  margin: 0;
-  padding: 0 0 0.8em 0;
+  font-size: 48px;
+  margin: 0 0 0.5em 0;
   font-weight: 700;
-  line-height: 1.4em;
+  line-height: 1.5;
+  color: #0D2481;
+}
+.sub-title {
+  font-size: 36px;
+  margin: 0 0 0.5em 0;
+  font-weight: 700;
+  line-height: 1.5;
+  color: #0D2481;
+  letter-spacing: 1px;
 }
 .text {
-  line-height: 2em;
   margin: 0;
 }
 .input {
@@ -171,20 +203,49 @@ body {
     }
   }
 }
+.link-more {
+  color: #0D2481;
+  text-decoration: none;
+  font-size: 28px;
+  white-space: nowrap;
+  padding-right: 1.84em;
+  position: relative;
+  transition: 0.3s;
+  display: inline-block;
+  line-height: 1.5;
+  &:hover {
+    opacity: 0.8;
+  }
+  &:after {
+    content: '';
+    display: block;
+    height: 0.55em;
+    width: 1.14em;
+    background: url('../img/icons/arrow2.svg') no-repeat;
+    background-size: 100% 100%;
+    margin-left: 0.7em;
+    position: absolute;
+    right: 0;
+    bottom: 0.4em;
+  }
+}
 
 
 @media all and(max-width: 992px) {
   .wrapper {
     padding-top: 94px;
   }
+  .title {
+    font-size: 32px;
+    margin-bottom: 0.6em;
+  }
+  .sub-title {
+    font-size: 26px;
+  }
 }
 @media all and(max-width: 768px) {
   body {
     font-size: 18px;
-  }
-  .title {
-    font-size: 26px;
-    padding-bottom: 0.6em;
   }
 }
 @media all and(max-width: 576px) {
@@ -209,6 +270,7 @@ body {
 @import "./partials/safety";
 @import "./partials/faq";
 @import "./partials/support";
+@import "./partials/features";
 @import "./partials/footer";
 
 .animated {

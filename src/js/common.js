@@ -3,6 +3,7 @@ $(document).ready(function () {
   lazy();
   tabs();
   upload();
+  cover();
 });
 $(window).resize(function () {
   innerWidth = $('body').innerWidth();
@@ -61,7 +62,10 @@ function lazy() {
     visibleOnly: true,
     threshold: '',
     effect: 'fadeIn',
-    effectTime: '300'
+    effectTime: '300',
+    afterLoad: function() {
+      cover();
+    }
   });
 }
 //tabs
@@ -111,4 +115,21 @@ function upload() {
         $('.upload__container').append('<div class="upload__block"><span>'+ name +'</span></div>');
     }
 });
+}
+
+//image-cover-box
+function cover() {
+  $('.cover-box').each(function () {
+    //set size
+    var th = $(this).height(), //box height
+      tw = $(this).width(), //box width
+      im = $(this).children('img'), //image
+      ih = im.height(),
+      iw = im.width();
+    if ((tw / th) >= (iw / ih)) {
+      im.addClass('ww').removeClass('wh');
+    } else {
+      im.addClass('wh').removeClass('ww');
+    }
+  });
 }

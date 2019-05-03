@@ -1,7 +1,10 @@
 .footer {
   background-color: #f5f5f5;
+  a {
+    color: #373A3C;
+  }
   &__container {
-    padding: 50px 0;
+    padding: 80px 0 50px 0;
   }
   &__section {
     display: flex;
@@ -13,28 +16,7 @@
     &_bottom {
       padding-top: 50px;
       align-items: center;
-    }
-  }
-  &__nav-list {
-    display: flex;
-    flex-wrap: wrap;
-    list-style: none;
-    padding: 0;
-    margin: 0;
-  }
-  &__nav-item {
-    color: rgba(55, 58, 60, 0.75);
-    padding: 10px 0;
-    &:not(:last-child) {
-      padding-right: 112px;
-    }
-  }
-  &__nav-link {
-    color: rgba(55, 58, 60, 0.75);
-    text-decoration: none;
-    transition: 0.3s;
-    &:hover {
-      color: rgba(55, 58, 60, 1);
+      flex-direction: column;
     }
   }
   &__list {
@@ -44,23 +26,22 @@
   }
   &__item {
     &:not(:last-child) {
-      padding-bottom: 20px;
+      padding-bottom: 10px;
     }
     &_title {
       font-size: 22px;
       line-height: 1em;
       text-transform: uppercase;
-      padding: 0 0 2em 0 !important;
+      padding: 0 0 35px 0 !important;
     }
   }
   &__link {
     text-decoration: none;
-    font-size: 18px;
-    color: #373a3c;
+    display: inline-block;
     transition: 0.3s;
     white-space: nowrap;
     &:hover {
-      color: #4b4b4b;
+      opacity: 0.8;
     }
     &_appstore {
       display: block;
@@ -81,12 +62,42 @@
       margin: 0 auto;
     }
   }
+  &__doc-list {
+    list-style: none;
+    margin: 40px 0 0 0;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    font-size: 16px;
+    justify-content: center;
+  }
+  &__doc-item {
+    &:not(:last-child) {
+      &:after {
+        content: '/';
+        margin: 0 4px;
+      }
+    }
+  }
+  &__doc-link {
+    opacity: 0.8;
+    transition: 0.3s;
+    text-decoration: none;
+    &:hover {
+      opacity: 1;
+    }
+  }
+}
+
+.copy {
+  opacity: 0.8;
+  margin-top: 100px
 }
 
 .socials {
   &__item {
     &:not(:last-child) {
-      padding-right: 40px;
+      padding-right: 48px;
     }
   }
   &__list {
@@ -97,22 +108,21 @@
   }
   &__link {
     display: block;
-    height: 24px;
-    width: 24px;
+    height: 48px;
+    width: 48px;
     transition: 0.3s;
     background: url('../img/icons/socials-sprite.png');
-    background-size: 68px 68px;
     &:hover {
       opacity: 0.7;
     }
     &_twitter {
-      background-position: -5px 28px;
+      background-position: -5px -63px;
     }
     &_facebook {
-      background-position: -5px 63px;
+      background-position: -5px -5px;
     }
     &_instagram {
-      background-position: -39px 63px;
+      background-position: -63px -5px;
     }
   }
 }
